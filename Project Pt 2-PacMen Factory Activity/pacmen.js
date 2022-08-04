@@ -59,6 +59,8 @@ function checkCollisions(item) {
   if(item.position.x + item.velocity.x + item.newimg.width > window.innerWidth || item.pos.x + item.velocity.x < 0){
     item.velocity.x = -item.velocity.x
   }
+  if(item.position.y + item.velocity.y + item.newimg.Height > window.innerHeight || item.pos.y + item.velocity.y < 0){
+    item.velocity.y = -item.velocity.y
 }
 
 
